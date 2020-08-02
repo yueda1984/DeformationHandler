@@ -53,7 +53,7 @@ function math()
 	{
 		if( "z" in p3d_A && "z" in p3d_B )
 			return Point3d( p3d_A.x + p3d_B.x, p3d_A.y + p3d_B.y, p3d_A.z + p3d_B.z );
-			else
+		else
 			return Point2d( p3d_A.x + p3d_B.x, p3d_A.y + p3d_B.y );			
 	}
 	
@@ -63,7 +63,7 @@ function math()
 			return Point3d( p3d_A.x * p3d_B.x, p3d_A.y * p3d_B.y, p3d_A.z * p3d_B.z );
 		else
 			return Point2d( p3d_A.x * p3d_B.x, p3d_A.y * p3d_B.y );				
-			}
+	}
 	
 	this.subtractBFromA = function( p3d_A, p3d_B )
 	{
@@ -172,7 +172,7 @@ function math()
 		var period_prime = checkRotationPeriod( orient_prime );
 		var periodShiftVal = ( period -period_prime ) *360;
 
-		return orient_prime += periodShiftVal;
+		return orient_prime + periodShiftVal;
 	}
 	
 	this.logPoint = function( point )
