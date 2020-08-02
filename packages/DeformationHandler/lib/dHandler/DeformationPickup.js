@@ -171,7 +171,7 @@ function private_functions()
 				break;
 
 			src = node.srcNode( src, 0 );
-			}
+		}
 		return chain;
 	};	
 
